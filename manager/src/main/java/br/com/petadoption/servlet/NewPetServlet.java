@@ -1,7 +1,6 @@
 package br.com.petadoption.servlet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -21,26 +20,19 @@ public class NewPetServlet extends HttpServlet {
 			throws ServletException, IOException {
 		
 		String petName = request.getParameter("name");
+		String petBreed = request.getParameter("breed");
+		String petAge = request.getParameter("age");
+		String petVaccine = request.getParameter("vaccine");
 
 		Pet pet = new Pet();
 		pet.setName(petName);
+		pet.setBreed(petBreed);
+		pet.setAge(Integer.parseInt(petAge));
+		pet.setVaccinated(petVaccine.equalsIgnoreCase("yes"));
 		PetDataBase db = new PetDataBase();
 		
 		db.add(pet);		
-		
-		/*
-		 * 
-		PrintWriter writer = response.getWriter();
-
-		  Generating a HTML within Java class
-		writer.println("<html>");
-		writer.println("<title>New Pet</title");
-		writer.println("<body>");
-		writer.println("Pet successfully registered: " + pet.getName());
-		writer.println("</body>");
-		writer.println("</html>");
-		*/
-		
+			
 		
 		/**
 		 * Using JSP

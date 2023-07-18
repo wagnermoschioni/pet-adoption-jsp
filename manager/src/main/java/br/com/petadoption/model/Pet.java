@@ -41,4 +41,11 @@ public class Pet {
 		this.breed = breed;
 	}
 
+	public boolean isVaccinated() {
+		return isVaccinated;
+	}
+	
+	public void setVaccinated(boolean vaccinated) {
+		isVaccinated = vaccinated;
+	}
 }

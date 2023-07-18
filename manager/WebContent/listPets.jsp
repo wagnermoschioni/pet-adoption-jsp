@@ -38,9 +38,9 @@ List<Pet> pets = (List<Pet>) request.getAttribute("pets");
    				 <c:forEach items="${pets}" var="pet">
    				 <tr>
 					<td class="col1">${pet.name}</td>
-					<td class="col2">${pet.name}</td>
-					<td class="col2">${pet.name}</td>
-					<td class="col2">Yes</td>
+					<td class="col2">${pet.breed}</td>
+					<td class="col2">${pet.age}</td>
+					<td class="col2">${pet.vaccinated}</td>
 					
 					 </tr>
 				</c:forEach>

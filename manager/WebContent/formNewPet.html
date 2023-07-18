@@ -20,7 +20,37 @@
 
 		<form action="/manager/newPet" method="post">
 
-			Register: <input class="pet-name" type="text" name="name" placeholder="Enter name" />
+			<h3>New Pet:</h3>
+
+			<div class="new-pet-infos">
+
+				<div class="group">
+					<p>Name</p>
+					<input class="pet-data" type="text" name="name" />
+				</div>
+
+				<div class="group">
+					<p>Breed</p>
+					<input class="pet-data" type="text" name="breed" />
+				</div>
+
+				<div class="group">
+					<p>Age</p>
+					<input class="pet-data" type="text" name="age" />
+				</div>
+
+								
+				<div class="group-select">
+				<p>Vaccinated</p>
+				<select class="vaccine" id="option" name="vaccine">
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+				</select>
+				</div>
+
+
+			</div>
+
 			<input class="btn" type="submit" value="Send" />
 
 

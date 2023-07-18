@@ -38,8 +38,8 @@ form {
 	color: rgb(0, 0, 0);
 	padding-top: 22px;
 	background-color: var(--gray);
-	width: 27%;
-	height: 200px;
+	width: 390px;
+	height: 465px;
 	border: node;
 	display: flex;
 	flex-direction: column;
@@ -62,9 +62,44 @@ header {
 	padding-left: 35px;
 }
 
+form p {
+	left: 10%;
+}
 
-.pet-name {
+.new-pet-infos {
+	margin-top: 1px;
+}
+
+.new-pet-infos p{
+	text-align: left;
+	margin-bottom: 5px;
+	
+}
+
+
+.group #option {
+	text-align: left;
+}
+
+.group-select {
+	margin-top: 18px;
+	text-align: left;
+}
+
+.group {
+margin-top: 18px;
+
+}
+
+.pet-data {
 	width: 274px;
+	height: 29px;
+	border: none;
+	border-radius: 8px;
+}
+
+.vaccine {
+	width: 160px;
 	height: 29px;
 	border: none;
 	border-radius: 8px;
@@ -85,8 +120,8 @@ main ul {
 
 .btn {
 	margin-top: 33px;
-	width: 115px;
-	height: 29px;
+	width: 155px;
+	height: 34px;
 	border-radius: 10px;
 	background-color: var(--blue);
 	border: none;
