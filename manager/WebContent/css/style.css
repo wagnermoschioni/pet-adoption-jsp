@@ -160,11 +160,40 @@ th, td {
 	 font-weight: 400;
 	 
  }
+ 
+ .col0 {
+	 width: 95px;
+ }
+ 
  .col1 {
 	 width: 290px;
  }
  .col2 {
 	 width: 175px;
+ }
+ 
+ 
+ .col3 {
+	 width: 115px;
+	 text-align: center;
+	 
+	 
+ }
+ 
+ .colx {
+	 display: flex;
+	 flex-direction: row;
+	 justify-content: space-around;
+	 color: sienna;
+	 font-weight: bold;
+ }
+ 
+  a {
+	 color: rgb(128, 0, 0);
+	 font-size: 1.1rem;
+	 justify-content: space-around;
+	 text-decoration: double;
+	 
  }
  
  .container {

@@ -2,18 +2,19 @@ package br.com.petadoption.model;
 
 public class Pet {
 
-	private Long id;
+	private Integer id;
 	
 	private String name;
 	private Integer age;
 	private String breed;
 	private boolean isVaccinated = false;
 
-	public Long getId() {
+	public Integer getId() {
+		
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 

@@ -2,7 +2,6 @@ package br.com.petadoption.servlet;
 
 import java.io.IOException;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -39,8 +38,12 @@ public class NewPetServlet extends HttpServlet {
 		 */
 		
 		request.setAttribute("name", pet.getName());
-		RequestDispatcher rd = request.getRequestDispatcher("/newPetCreated.jsp");
-		rd.forward(request, response);
+		
+		response.sendRedirect("listPet");
+		
+//		request.setAttribute("name", pet.getName());
+//		RequestDispatcher rd = request.getRequestDispatcher("/listPet");
+//		rd.forward(request, response);
 		
 		
 		
