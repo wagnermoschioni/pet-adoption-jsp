@@ -3,10 +3,11 @@ package br.com.petadoption.model;
 public class Pet {
 
 	private Long id;
+	
 	private String name;
 	private Integer age;
 	private String breed;
-	private Boolean isVaccinated = false;
+	private boolean isVaccinated = false;
 
 	public Long getId() {
 		return id;

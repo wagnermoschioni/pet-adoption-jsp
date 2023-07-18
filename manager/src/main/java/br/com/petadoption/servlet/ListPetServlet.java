@@ -1,9 +1,9 @@
 package br.com.petadoption.servlet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.List;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -26,20 +26,9 @@ public class ListPetServlet extends HttpServlet {
 		
 		List<Pet> petList = db.getPets();
 		
-		PrintWriter writer = response.getWriter();
-
-		writer.println("<html>");
-		writer.println("<title>New Pet</title");
-		writer.println("<body>");
-		writer.println("<ul>");
-		
-		for (Pet pet : petList) {
-			writer.println("<li>" + pet.getName() + "</li>");	
-		}		
-		
-		writer.println("<ul>");
-		writer.println("</body>");
-		writer.println("</html>");
+		request.setAttribute("pets", petList);
+		RequestDispatcher rd = request.getRequestDispatcher("/listPets.jsp");
+		rd.forward(request, response);
 		
 	}
 

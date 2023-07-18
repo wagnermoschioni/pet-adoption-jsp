@@ -1,20 +1,37 @@
 @charset "ISO-8859-1";
 
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
 :root {
 	--blue: rgb(47, 47, 255);
 	--gray: rgb(200, 200, 200);
-	
+
 }
+
 body {
 	background-color: #ededed;
 	font-family: 'Poppins';
+	display: flex;
+	flex-direction: column;
+
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+.list-container {
+	margin-top: 16px;
+	width: 25%;
+	height: 60vh;
+	background-color: var(--gray);
+	padding: 22px;
+	border-radius: 3%;
+	line-height: 20px;
+}
+
+.items {
+	row-gap: 5px;
 }
 
 form {
@@ -31,16 +48,39 @@ form {
 	margin-top: 22px;
 	gap: 12px;
 	border-radius: 12px;
-		
+
+}
+
+header {
+	background-color: var(--gray);
+	height: 13vh;
+	display: flex;
+	align-items: center;
+}
+
+.title {
+	padding-left: 35px;
 }
 
 
-
 .pet-name {
-	width: 275px;
+	width: 274px;
 	height: 29px;
 	border: none;
 	border-radius: 8px;
+}
+
+main {
+	padding-left: 35px;
+	padding-top: 10px;
+	background-color: rgb(243, 243, 243);
+	height: 100vh;
+}
+
+main ul {
+	list-style-type: none;
+	text-transform: uppercase;
+	color: var(--blue);
 }
 
 .btn {
@@ -50,6 +90,59 @@ form {
 	border-radius: 10px;
 	background-color: var(--blue);
 	border: none;
-	color: white;	
+	color: white;
 	cursor: pointer;
+}
+
+.list-pet-name {
+	margin-bottom: 4px;
+}
+
+
+.tb {
+	border: 0.8px solid rgb(255, 255, 255);    
+	text-align: center;
+	
+}
+
+
+table, th, td {
+      border-width: 1px;
+      border-style: solid;
+      border-color: white;
+    }
+
+th, td {
+      border: 1px solid white;
+      padding: 8px;     
+       text-align: left;
+      background-color: rgb(219, 219, 219);
+    }
+    
+ th {
+	 background-color: var(--blue);
+	 color: white;
+	 
+ }
+ .col1 {
+	 width: 290px;
+ }
+ .col2 {
+	 width: 175px;
+ }
+ 
+ .container {
+	 display: flex;
+      justify-content: center;
+      align-items: flex-start;
+ }
+
+
+
+.list-container ul {
+
+	list-style: none;
+	text-transform: uppercase;
+
+
 }
