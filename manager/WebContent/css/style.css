@@ -1,0 +1,55 @@
+@charset "ISO-8859-1";
+
+:root {
+	--blue: rgb(47, 47, 255);
+	--gray: rgb(200, 200, 200);
+	
+}
+body {
+	background-color: #ededed;
+	font-family: 'Poppins';
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+form {
+	color: rgb(0, 0, 0);
+	padding-top: 22px;
+	background-color: var(--gray);
+	width: 27%;
+	height: 200px;
+	border: node;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 22px;
+	gap: 12px;
+	border-radius: 12px;
+		
+}
+
+
+
+.pet-name {
+	width: 275px;
+	height: 29px;
+	border: none;
+	border-radius: 8px;
+}
+
+.btn {
+	margin-top: 33px;
+	width: 115px;
+	height: 29px;
+	border-radius: 10px;
+	background-color: var(--blue);
+	border: none;
+	color: white;	
+	cursor: pointer;
+}
