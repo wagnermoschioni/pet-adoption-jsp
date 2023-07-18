@@ -157,6 +157,7 @@ th, td {
  th {
 	 background-color: var(--blue);
 	 color: white;
+	 font-weight: 400;
 	 
  }
  .col1 {
