@@ -38,4 +38,14 @@ public class PetDataBase {
 
 	}
 
+	public Pet findById(Integer id) {
+		
+		for (Pet pet : pets) {
+			if (pet.getId() == id) {
+				return pet;
+			}
+		}
+		return null;
+	}
+
 }
